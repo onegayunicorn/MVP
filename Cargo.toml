@@ -1,0 +1,19 @@
+[package]
+name = "reality_engine"
+version = "0.1.0"
+edition = "2021"
+
+[lib]
+crate-type = ["cdylib"]
+
+[dependencies]
+jni = "0.21.1"
+tokio = { version = "1.36.0", features = ["full"] }
+serde = { version = "1.0.197", features = ["derive"] }
+blake3 = "1.5.1"
+dashmap = "5.5.3"
+lazy_static = "1.4.0"
+rand = "0.8.5"
+tracing = "0.1.40"
+tracing-subscriber = "0.3.18"
+rayon = "1.9.0"
